@@ -21,11 +21,12 @@ This app
 
 ### Project Roadmap
 
+start here: [Roadmap Document](https://docs.google.com/document/d/1YSj-paLyfSjugP2TWX2LewxLhaPVreLoTJSTcG-aADo/edit?usp=sharing).
 google.docs/awdoijalwdlawj
 
 ### Authors
 
-#### Jay Nayee - jay@email.com
+#### Jay Nayee - jaynayee32@gmail.com
 
 #### John Wood - woodjoh783@gmail.com
 
