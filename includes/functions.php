@@ -3,7 +3,7 @@
     $result = [];
 
     function getAll($conn) {
-        $query = "SELECT * FROM tbl_projectdata";
+        $query = "SELECT * FROM tbl_roku";
 
         $runQuery = $conn->query($query);
 
@@ -15,7 +15,7 @@
     }
 
     function getSingle($conn, $id) {
-        $query = "SELECT * FROM tbl_projectdata WHERE id=" . $id . "";
+        $query = "SELECT * FROM tbl_roku WHERE id=" . $id . "";
 
         $runQuery = $conn->query($query);
 
