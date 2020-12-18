@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = [
         'host' => 'localhost',
-        'dbname' => 'db_projectdata',
+        'dbname' => 'db_roku',
         'charset' => 'utf8'
     ];
 
