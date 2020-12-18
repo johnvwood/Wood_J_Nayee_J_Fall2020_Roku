@@ -21,8 +21,7 @@ This app
 
 ### Project Roadmap
 
-Start here: [Roadmap Document](https://docs.google.com/document/d/1XvLoM3WDKcM0z8NsTtYCMZSgUkxdRZ1US3o8SnxdTzQ/edit?usp=sharing).
-google.docs/awdoijalwdlawj
+Start here: [Roadmap Document](https://docs.google.com/document/d/1XvLoM3WDKcM0z8NsTtYCMZSgUkxdRZ1US3o8SnxdTzQ/edit?usp=sharing)
 
 ### Authors
 
