@@ -1,5 +1,9 @@
+//import express
 const express = require('express');
 const router = express.Router();
+
+//import sql
+const connect = require('../config/sqlConfig')
 
 router.get("/", (req, res) => {
     //json encode in java
@@ -11,7 +15,15 @@ router.get("/users", (req, res) => {
 });
 
 router.get("/movies", (req, res) => {
-    res.json({ message: "all movies route" });
+    //mysql documentation, select call
+    connect.getConnection((err, connection) => {
+        if (err) throw err; //no connection error
+        connection.query('SELECT * FROM tbl_movies', (error, results) => {
+            connection.release();
+            if (error) throw error; //post-release error
+            res.json(results);
+        });
+    });
 });
 
 //dynamic, can accept a parameter
