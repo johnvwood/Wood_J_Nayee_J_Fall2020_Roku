@@ -33,7 +33,6 @@ router.get("/movies", (req, res) => {
 router.get("/movies/:id", (req, res) => {
     connect.query(`SELECT * FROM tbl_movies WHERE movies_id=${req.params.id}`, (error, results) => {
         if (error) throw error; //no connection error
-        console.log("results:", results); // can add fields for additional console data
 
         res.json(results);
     });
