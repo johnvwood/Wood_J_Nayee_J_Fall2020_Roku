@@ -7,17 +7,8 @@
     "start-server": "nodemon server",
     "start":"node server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johnvwood/Wood_J_Nayee_J_Fall2020_Roku.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "johnvwood",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/johnvwood/Wood_J_Nayee_J_Fall2020_Roku/issues"
-  },
-  "homepage": "https://github.com/johnvwood/Wood_J_Nayee_J_Fall2020_Roku#readme",
   "dependencies": {
     "express": "^4.17.1",
     "mysql": "^2.18.1"
