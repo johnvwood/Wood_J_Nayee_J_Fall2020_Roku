@@ -1,6 +1,7 @@
-<section class="home-wrap">
-    <h2>Home</h2>
-    <h2>{{ message }}</h2>
+<section class="pageHome">
+    <div class="movieThumbRow">
+        <moviethumb v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb>
+    </div>
+    
 
-    <moviethumb v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb>
 </section>

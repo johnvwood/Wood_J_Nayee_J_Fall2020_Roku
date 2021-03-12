@@ -5,11 +5,13 @@
   "main": "app.js",
   "scripts": {
     "start-client": "nodemon app",
+    "start-bs" : "browser-sync start --proxy 'localhost:5050' --files 'public' 'views'",
     "start": "node app"
   },
   "author": "johnvwood",
   "license": "MIT",
   "dependencies": {
+    "browser-sync": "^2.26.14",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
     "http-proxy-middleware": "^1.0.6"
