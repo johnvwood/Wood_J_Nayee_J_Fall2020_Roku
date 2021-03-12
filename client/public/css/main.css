@@ -1,74 +1,18 @@
-html {
-  background: #dadada;
-  min-width: 360px;
-  max-width: 767px;
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Error: Expected expression.
+ *   ,
+ * 3 | $mainPurple: 
+ *   |              ^
+ *   '
+ *   assets\sass\modules\vars.scss 3:14  @import
+ *   assets\sass\main.scss 1:9           root stylesheet */
 
-body {
-  background: white;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected expression.\a   \2577 \a 3 \2502  $mainPurple: \a   \2502               ^\a   \2575 \a   assets\\sass\\modules\\vars.scss 3:14  @import\a   assets\\sass\\main.scss 1:9           root stylesheet";
 }
-
-nav {
-  height: 166px;
-  background-color: #e0e0e0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav .navbar {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-}
-nav .navbar .navbarMenu {
-  background-color: black;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
-}
-nav .navbar .navbarLinkBox {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 70%;
-}
-nav .navbar .navbarLinkBox a {
-  align-self: center;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
-  font-size: 18pt;
-}
-nav .navbar .navbarSearch {
-  background-color: black;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
-}
-
-.movieThumbRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  background-color: aqua;
-}
-
-.movieBox {
-  width: 120px;
-  display: flex;
-  flex-direction: column;
-}
-
-.movieThumbImg {
-  width: 100px;
-  cursor: pointer;
-  align-self: center;
-}
-
-/*# sourceMappingURL=main.css.map */

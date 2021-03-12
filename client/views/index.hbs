@@ -1,7 +1,28 @@
+<nav class="nav">
+    <div class="navbar">
+        <div class="navbarMenu"></div>
+        <div class="navbarLinkBox">
+            <a href="#">Home</a>
+        </div>
+        <div class="navbarSearch"></div>
+    </div>
+</nav>
+
+
 <section class="pageHome">
-    <div class="movieThumbRow">
+
+    <div class="heroRotater">
+        <div class="heroVid"></div>
+        <div class="heroDots"></div>
+    </div>
+
+    <div class="movieRowHeader">
+        <h3 class="headerText">Latest Movies</h3>
+        <h3 class="headerViewAll">View All</h3>
+    </div>
+
+    <div class="movieRow">
         <moviethumb v-for="item in allMovies" :movie="item" :key="item.movies_id"></moviethumb>
     </div>
-    
 
 </section>

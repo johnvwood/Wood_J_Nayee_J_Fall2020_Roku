@@ -1,0 +1,78 @@
+.pageLogin {
+    height: 100vh;
+    display: flex;
+    p{
+        font-size: 11pt;
+        color: rgb(150, 150, 150);
+    }
+}
+
+.loginBox {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 570px;
+    width: 380px;
+    box-sizing: border-box;
+    input {
+        width:100%;
+        height: 70px;
+        border: none;
+        box-sizing: border-box;
+        padding: 22px;
+        font-size: 12pt;
+        border-radius: 6px;
+        filter: $shadow;
+    }
+}
+
+.rokuLoginLogo {
+    width: 160px;
+    margin-top:44px;
+    margin-bottom: 30px;
+}
+
+.loginButton {
+    height: 68px;
+    width:100%;
+    border-radius: 24px;
+    background-color: rgb(35, 34, 59);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -4px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    p{
+        color: white;
+        font-weight: bold;
+        font-size: 18pt;
+    }
+}
+
+.signupBox {
+     display: flex;
+     flex-direction: row;
+     .signupLink {
+        margin-left: 4px;
+        font-weight: bold;
+        cursor: pointer;
+     }
+ }
+
+.socialsBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 224px;
+    .googleBox, .facebookBox {
+        width: 106px;
+        height: 66px;
+        background-color: white;
+        border-radius: 12px;
+        filter: $shadow;
+    }
+}
+

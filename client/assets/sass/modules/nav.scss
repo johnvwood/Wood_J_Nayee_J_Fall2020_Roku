@@ -1,0 +1,42 @@
+nav {
+    height: 166px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    filter: $shadow;
+    .navbar {
+        width: 85%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        .navbarMenu {
+            background-color: black;
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+        }
+        .navbarLinkBox {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            width: 70%;
+            a {
+            align-self: center;
+            font-style: normal;
+            text-decoration: none;
+            color: black;
+            font-size: 18pt;
+            }
+        }
+        .navbarSearch {
+            background-color: black;
+            width: 34px;
+            height: 34px;
+            cursor: pointer;
+        }
+    }
+
+}
