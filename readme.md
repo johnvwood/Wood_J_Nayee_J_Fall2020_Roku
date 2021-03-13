@@ -19,12 +19,21 @@ This app is a basic mobile-first streaming app that streams and renders dynamic 
 
 - Click the green 'Code' button and hit 'Download ZIP'
 - Extract it into a folder, best done in an empty one
-- Open the 'index.html' file with a web browser of your choice
+- Import 'assets/roku_streaming.sql' into your local MySQL structure (PHPMyAdmin etc.)
+- Configure the 'server/config/userConfig.js' file with your MySQL User and Password
+- Run `npm run start-server` for the server process (port 5000)
+- Run `npm run start-client` for the client process (port 5050)
+- Open the client port as localhost in a browser window
 - Email us (at bottom) if you enjoy our work and want to collaborate
 
 ### Project Roadmap
 
 Start here: [Roadmap Document](https://docs.google.com/document/d/1XvLoM3WDKcM0z8NsTtYCMZSgUkxdRZ1US3o8SnxdTzQ/edit?usp=sharing)
+
+### Additional Info
+
+Tested on Windows 10, Mozilla Firefox
+Built With Microsoft VSCode, PHPMyAdmin
 
 ### Authors
 
