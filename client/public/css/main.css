@@ -1,3 +1,225 @@
+html {
+  background: white;
+  min-width: 360px;
+  max-width: 767px;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+body {
+  background: white;
+}
 
-/*# sourceMappingURL=main.css.map */
+nav {
+  height: 140px;
+  padding-bottom: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+}
+nav .navbar {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+nav .navbar .navbarMenu {
+  background-color: black;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+nav .navbar .navbarLinkBox {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 70%;
+}
+nav .navbar .navbarLinkBox a {
+  align-self: center;
+  font-style: normal;
+  text-decoration: none;
+  color: black;
+  font-size: 18pt;
+}
+nav .navbar .navbarSearch {
+  background-color: black;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.heroRotater {
+  background-color: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.heroRotater .heroVid {
+  padding-top: 56.25%;
+  background-color: #662d91;
+  width: 90%;
+  border-radius: 40px;
+  margin: auto;
+  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+}
+.heroRotater .heroDots {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.heroRotater .heroDots section {
+  height: 13px;
+  width: 13px;
+  border-radius: 100%;
+  background-color: black;
+  transition: 100ms;
+}
+.heroRotater .heroDots section:hover {
+  background-color: #662d91;
+}
+
+.movieRowHeader {
+  margin: auto;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 80px;
+  font-size: 18pt;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 22px;
+  box-sizing: border-box;
+  color: black;
+}
+.movieRowHeader .headerViewAll {
+  color: #662d91;
+  cursor: pointer;
+}
+
+.movieRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.movieBox {
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  margin: 6px;
+  background-color: white;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.3));
+  cursor: pointer;
+  transition-duration: 300ms;
+  margin-bottom: 30px;
+  border-radius: 14px;
+}
+.movieBox:hover {
+  filter: drop-shadow(0px 8px 20px rgba(179, 80, 255, 0.4));
+  width: 122px;
+}
+.movieBox .movieThumbImg {
+  border-radius: 14px 14px 0 0;
+  width: inherit;
+  align-self: center;
+}
+.movieBox .movieTitle {
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  height: 55px;
+  box-sizing: border-box;
+  color: #6e6e6e;
+  font-size: 10pt;
+  font-weight: bold;
+}
+
+.pageLogin {
+  height: 100vh;
+  display: flex;
+}
+.pageLogin p {
+  font-size: 11pt;
+  color: #969696;
+}
+
+.loginBox {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 570px;
+  width: 380px;
+  box-sizing: border-box;
+}
+.loginBox input {
+  width: 100%;
+  height: 70px;
+  border: none;
+  box-sizing: border-box;
+  padding: 22px;
+  font-size: 12pt;
+  border-radius: 6px;
+  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+}
+
+.rokuLoginLogo {
+  width: 160px;
+  margin-top: 44px;
+  margin-bottom: 30px;
+}
+
+.loginButton {
+  height: 68px;
+  width: 100%;
+  border-radius: 24px;
+  background-color: #23223b;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: -4px;
+  margin-bottom: -10px;
+  cursor: pointer;
+}
+.loginButton p {
+  color: white;
+  font-weight: bold;
+  font-size: 18pt;
+}
+
+.signupBox {
+  display: flex;
+  flex-direction: row;
+}
+.signupBox .signupLink {
+  margin-left: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.socialsBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 224px;
+}
+.socialsBox .googleBox, .socialsBox .facebookBox {
+  width: 106px;
+  height: 66px;
+  background-color: white;
+  border-radius: 12px;
+  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+}

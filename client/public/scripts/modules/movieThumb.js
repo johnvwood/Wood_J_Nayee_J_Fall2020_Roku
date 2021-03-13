@@ -5,8 +5,9 @@ export default {
 
     template: 
     `
-    <div>
-        <img :src='"images/" + movie.movies_cover' :alt='movie.movies_title + " thumbnail"'>
+    <div class="movieBox">
+        <img class="movieThumbImg" :src='"images/movies/" + movie.movies_cover' :alt='movie.movies_title + " thumbnail"'>
+        <h3 class="movieTitle">{{movie.movies_title}}</h3>
     </div>
     `
 }
