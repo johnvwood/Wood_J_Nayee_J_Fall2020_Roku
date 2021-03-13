@@ -81,6 +81,10 @@ nav .navbar .navbarSearch {
   width: 13px;
   border-radius: 100%;
   background-color: black;
+  transition: 100ms;
+}
+.heroRotater .heroDots section:hover {
+  background-color: #662d91;
 }
 
 .movieRowHeader {
@@ -118,12 +122,14 @@ nav .navbar .navbarSearch {
   cursor: pointer;
   transition-duration: 300ms;
   margin-bottom: 30px;
+  border-radius: 14px;
 }
 .movieBox:hover {
   filter: drop-shadow(0px 8px 20px rgba(179, 80, 255, 0.4));
   width: 122px;
 }
 .movieBox .movieThumbImg {
+  border-radius: 14px 14px 0 0;
   width: inherit;
   align-self: center;
 }
@@ -133,11 +139,11 @@ nav .navbar .navbarSearch {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  background-color: white;
   height: 55px;
   box-sizing: border-box;
-  color: black;
-  font-size: 11pt;
+  color: #6e6e6e;
+  font-size: 10pt;
+  font-weight: bold;
 }
 
 .pageLogin {

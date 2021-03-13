@@ -24,6 +24,10 @@
             width: 13px;
             border-radius: 100%;
             background-color: black;
+            transition: 100ms;
+            &:hover{
+                background-color: $mainPurple;
+            }
         }
     }
 }
@@ -63,11 +67,13 @@
     cursor: pointer;
     transition-duration: 300ms;
     margin-bottom: 30px;
+    border-radius: 14px;
     &:hover{
         filter: drop-shadow(0px 8px 20px rgba(179, 80, 255, 0.4));
         width: 122px;
     }
     .movieThumbImg {
+        border-radius: 14px 14px 0 0;
         width: inherit;
         align-self: center;
     }
@@ -77,11 +83,11 @@
         align-items: center;
         justify-content: space-around;
         text-align: center;
-        background-color: white;
         height: 55px;
         box-sizing: border-box;
-        color: black; 
-        font-size: 11pt;
+        color: rgb(110, 110, 110); 
+        font-size: 10pt;
+        font-weight: bold;
     }
 }
 
