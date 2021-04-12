@@ -5,8 +5,22 @@ export default {
 
     template: 
     `
-    <div class="movieBox" @click="$emit('click', movieThumbClick)">
-        <img class="movieThumbImg" :src='"images/movies/" + movie.movies_cover' :alt='movie.movies_title + " thumbnail"'>
+    <div class="movieBox">
+        <img @click="movieThumbClick" class="movieThumbImg" :src='"images/movies/" + movie.movies_cover' :alt='movie.movies_title + " thumbnail"'>
     </div>
-    `
+    `,
+
+    data: function () {
+        return {
+            allMovies: [],
+            currentMovie: {},
+        }
+    },
+
+    methods: {
+        movieThumbClick(target) {
+            this.currentMovie = target;
+            console.log('Clicked on thumb');
+        }
+    },
 }

@@ -78,7 +78,6 @@ nav .navbar .navbarSearch {
 
 .heroVid {
   width: 100%;
-  padding-top: 64%;
   background-color: #662d91;
   filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
 }
@@ -88,43 +87,49 @@ nav .navbar .navbarSearch {
   padding-right: 26px;
   padding-top: 16px;
   padding-bottom: 16px;
-  margin-bottom: 30px;
+  margin-bottom: 54px;
 }
 
 .movieTopBox {
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   align-items: center;
-  height: 40px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-bottom: 12px;
-}
-
-.movieYrLBox {
-  text-align: end;
+  font-weight: 600;
 }
 
 .movieTitle {
-  font-size: 22pt;
+  font-size: 16pt;
+  line-height: 18pt;
+  width: 79%;
+}
+
+.movieYrLBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  text-align: right;
+  width: 21%;
+  font-size: 13pt;
 }
 
 .movieYear {
-  font-size: 13pt;
-}
-
-.movieLength {
-  font-size: 13pt;
+  margin-bottom: 1px;
 }
 
 .movieDesc {
   font-size: 13pt;
+  line-height: 14pt;
 }
 
 .movieRowHeader {
-  height: 80px;
   padding-left: 26px;
   padding-right: 26px;
   margin-top: 12px;
+  margin-bottom: 46px;
   display: flex;
   justify-content: space-between;
   font-size: 16pt;
