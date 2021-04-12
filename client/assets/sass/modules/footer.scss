@@ -1,0 +1,17 @@
+.footer {
+    height: 80px;
+    width: 100%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    border-top: 3px solid $mainPurple;
+    .footerBox {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+

@@ -1,10 +1,17 @@
-import Vue from "https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.esm.browser.js";
-import movieThumbModule from "./modules/movieThumb.js";
+import movieThumbComponent from "./components/movieThumbComponent.js";
+// import loginComponent from "./components/loginComponent.js";
+
+// const router = new VueRouter({
+//     routes:[
+//         {path: "/", name: "root", component: loginComponent}
+//     ]
+// });
 
 (() => {
     const vm = new Vue({
         data: {
-            allMovies: []
+            allMovies: [],
+            currentMovie:{}
         },
 
         created: function() {
@@ -19,11 +26,17 @@ import movieThumbModule from "./modules/movieThumb.js";
         },
 
         methods: {
+            movieThumbClick(target) {
+                this.currentMovie = target;
+                console.log('Clicked on thumb');
+            }
         },
 
         components: {
-            moviethumb: movieThumbModule
-        }
+            //html tag name : import name
+            moviethumb: movieThumbComponent
+        },
 
+        //router
     }).$mount("#app");
 })();

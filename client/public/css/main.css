@@ -1,7 +1,6 @@
 html {
   background: white;
   min-width: 360px;
-  max-width: 767px;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -11,21 +10,22 @@ body {
 }
 
 nav {
-  height: 140px;
-  padding-bottom: 10px;
+  height: 120px;
   background-color: white;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+  border-bottom: 3px solid #662d91;
 }
 nav .navbar {
-  width: 85%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 nav .navbar .navbarMenu {
   background-color: black;
@@ -53,51 +53,83 @@ nav .navbar .navbarSearch {
   cursor: pointer;
 }
 
-.heroRotater {
-  background-color: none;
+.footer {
+  height: 80px;
+  width: 100%;
+  background-color: white;
   display: flex;
-  flex-direction: column;
-  margin-top: 50px;
+  align-items: center;
+  border-top: 3px solid #662d91;
 }
-.heroRotater .heroVid {
-  padding-top: 56.25%;
-  background-color: #662d91;
-  width: 90%;
-  border-radius: 40px;
-  margin: auto;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
-}
-.heroRotater .heroDots {
-  width: 20%;
+.footer .footerBox {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: auto;
-  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.heroRotater {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.heroVid {
+  width: 100%;
+  padding-top: 64%;
+  background-color: #662d91;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+}
+
+.heroInfo {
+  padding-left: 26px;
+  padding-right: 26px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   margin-bottom: 30px;
 }
-.heroRotater .heroDots section {
-  height: 13px;
-  width: 13px;
-  border-radius: 100%;
-  background-color: black;
-  transition: 100ms;
+
+.movieTopBox {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  margin-bottom: 12px;
 }
-.heroRotater .heroDots section:hover {
-  background-color: #662d91;
+
+.movieYrLBox {
+  text-align: end;
+}
+
+.movieTitle {
+  font-size: 22pt;
+}
+
+.movieYear {
+  font-size: 13pt;
+}
+
+.movieLength {
+  font-size: 13pt;
+}
+
+.movieDesc {
+  font-size: 13pt;
 }
 
 .movieRowHeader {
-  margin: auto;
-  margin-bottom: 20px;
-  width: 90%;
   height: 80px;
-  font-size: 18pt;
+  padding-left: 26px;
+  padding-right: 26px;
+  margin-top: 12px;
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
-  box-sizing: border-box;
+  font-size: 16pt;
   color: black;
+  box-sizing: border-box;
 }
 .movieRowHeader .headerViewAll {
   color: #662d91;
@@ -105,45 +137,35 @@ nav .navbar .navbarSearch {
 }
 
 .movieRow {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .movieBox {
-  width: 120px;
+  width: 96px;
   display: flex;
   flex-direction: column;
-  margin: 6px;
-  background-color: white;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.3));
-  cursor: pointer;
-  transition-duration: 300ms;
+  margin: 5px;
   margin-bottom: 30px;
   border-radius: 14px;
+  background-color: white;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+  transition-duration: 300ms;
 }
 .movieBox:hover {
   filter: drop-shadow(0px 8px 20px rgba(179, 80, 255, 0.4));
-  width: 122px;
 }
 .movieBox .movieThumbImg {
-  border-radius: 14px 14px 0 0;
+  border-radius: 4px;
   width: inherit;
   align-self: center;
-}
-.movieBox .movieTitle {
-  padding: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  height: 55px;
-  box-sizing: border-box;
-  color: #6e6e6e;
-  font-size: 10pt;
-  font-weight: bold;
 }
 
 .pageLogin {
@@ -173,7 +195,7 @@ nav .navbar .navbarSearch {
   padding: 22px;
   font-size: 12pt;
   border-radius: 6px;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
 }
 
 .rokuLoginLogo {
@@ -221,7 +243,7 @@ nav .navbar .navbarSearch {
   height: 66px;
   background-color: white;
   border-radius: 12px;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
 }
 
 /*# sourceMappingURL=main.css.map */

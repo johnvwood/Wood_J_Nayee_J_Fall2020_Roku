@@ -1,18 +1,19 @@
 nav {
-    height: 140px;
-    padding-bottom: 10px;
+    height: 120px;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     filter: $shadow;
+    border-bottom: 3px solid $mainPurple;
     .navbar {
-        width: 85%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
         .navbarMenu {
             background-color: black;
             width: 34px;
@@ -25,11 +26,11 @@ nav {
             align-items: flex-start;
             width: 70%;
             a {
-            align-self: center;
-            font-style: normal;
-            text-decoration: none;
-            color: black;
-            font-size: 18pt;
+                align-self: center;
+                font-style: normal;
+                text-decoration: none;
+                color: black;
+                font-size: 18pt;
             }
         }
         .navbarSearch {

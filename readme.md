@@ -7,7 +7,7 @@ This app is a basic mobile-first streaming app that streams and renders dynamic 
 
 - Implement the prototype styling to sass files
 - Add iPad and Desktop viewing presets
-- For a more detailed 'To Do' please check below for 'Project Roadmap'
+- For a more detailed development 'To Do' please check below for 'Project Roadmap'
 
 ### Required
 

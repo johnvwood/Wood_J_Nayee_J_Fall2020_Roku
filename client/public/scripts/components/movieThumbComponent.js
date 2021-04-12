@@ -1,13 +1,12 @@
 export default {
-    name: "movieThumbModule",
+    name: "movieThumbComponent",
 
     props: ["movie"],
 
     template: 
     `
-    <div class="movieBox">
+    <div class="movieBox" @click="$emit('click', movieThumbClick)">
         <img class="movieThumbImg" :src='"images/movies/" + movie.movies_cover' :alt='movie.movies_title + " thumbnail"'>
-        <h3 class="movieTitle">{{movie.movies_title}}</h3>
     </div>
     `
 }

@@ -9,14 +9,31 @@ router.use("/api", createProxyMiddleware({
         accept: "application/json, application/x-www-form-urlencoded"
     },
     changeOrigin: true
-}));
+}))
 
-router.get("/", (req, res) => {
-    res.render("index");
-});
+router.use("/ums", createProxyMiddleware({
+    target: "http://localhost:5000",
+    headers: {
+        accept: "application/json, application/x-www-form-urlencoded"
+    },
+    changeOrigin: true
+}))
 
-router.get("/login", (req, res) => {
-    res.render("login");
-});
+
+//ROUTES
+    router.get("/", (req, res) => {
+        res.render("index");
+    })
+
+    router.get("/login", (req, res) => {
+        res.render("login");
+    })
+
+//ERROR 404 ROUTE
+    router.use((req, res) => {
+        res.status(404);
+        res.render("error");
+    })
+
 
 module.exports = router;
