@@ -5,7 +5,12 @@
             <a href="#">Home</a>
         </div>
         <div class="navbarSearch"></div>
-        <p v-if="isAdmin">This is the Admin button</p>
-        <p @click="logout">Logout</p>
+        <div v-if="currentUser" class="userNav">
+            <p @click="logout">Logout</p>
+            <img v-if="currentUser.user_avatar" :src="'images/users/' + currentUser.user_avatar" :alt="currentUser.user_fname + 's Profile Picture'">
+            <p v-if="currentUser.user_admin">This is the Admin button</p>
+            
+        </div>
+        
     </div>
 </nav>

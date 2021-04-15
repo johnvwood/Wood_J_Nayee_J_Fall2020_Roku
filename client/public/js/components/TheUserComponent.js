@@ -22,11 +22,13 @@ export default {
 
     methods: {
         navToHome() {
+            // routes user to home page
+            this.$router.push({ name: "home", params: { currentuser: this.liveuser }});
+            
             //saves user login creds to local storage
             window.localStorage.setItem('cacheduser', JSON.stringify(this.liveuser));
 
-            // routes user to home page
-            this.$router.push({ name: "home", params: { currentuser: this.liveuser }});
+           
         }
     }
 }

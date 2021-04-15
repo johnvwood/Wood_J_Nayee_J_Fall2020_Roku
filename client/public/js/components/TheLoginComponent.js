@@ -1,24 +1,19 @@
 export default {
     name: "TheLoginComponent",
     template: `
-        <!-- <section class="pageLogin">
-        <div class="loginBox">
-            <img class="rokuLoginLogo" src="images/roku-logo.svg" alt="Roku Logo">
-            <input type="email" name="" id="usernameBox" placeholder="Email Address">
-            <input type="password" name="" id="passwordBox" placeholder="Password">
-            <p>Forgot your password?</p>
-            <div class="loginButton"><p>Login</p></div>
-            <section class="signupBox">
-                <p>Don't have an account?</p>
-                <p class="signupLink">Sign up</p>
-            </section>
-            <div class="socialsBox">
-                <div class="googleBox"></div>
-                <div class="facebookBox"></div>
-            </div>
-        </div>
-        </section> -->
-        <div class="container">
+        <section class="pageLogin">
+            <form class="loginBox">
+                <img class="rokuLoginLogo" src="images/roku-logo.svg" alt="Roku Logo">
+                <input v-model="input.username" type="text" name="" id="usernameBox" placeholder="Username" required>
+                <input v-model="input.password" type="password" name="" id="passwordBox" placeholder="Password" required>
+                <button v-on:click.prevent="login()" type="submit" class="loginButton">Login</button>
+                <div class="socialsBox">
+                    <div class="googleBox"></div>
+                    <div class="facebookBox"></div>
+                </div>
+            </form>
+        </section>
+        <!-- <div class="container">
             <div class="jumbotron roku-jumbotron">
                 <h1 class="display-4">Welcome to Flashback!</h1>
                 <p class="lead">Before revisiting your favourite movies, tv shows or music from yesteryear, please log in with a valid username and password.</p>
@@ -41,7 +36,7 @@ export default {
                     </div>
                 </form>            
             </div>
-        </div>
+        </div> -->
      `,
  
     data() {
