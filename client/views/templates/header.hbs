@@ -5,5 +5,7 @@
             <a href="#">Home</a>
         </div>
         <div class="navbarSearch"></div>
+        <p v-if="isAdmin">This is the Admin button</p>
+        <p @click="logout">Logout</p>
     </div>
 </nav>

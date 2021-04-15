@@ -1,7 +1,7 @@
 export default {
     name: "TheMediaComponent",
 
-    props: ["movie"],
+    props: ["currentuser"],
 
     template: `
         <section class="pageHome">
@@ -43,7 +43,7 @@ export default {
         fetch("/api/movies")
             .then(res => res.json())
             .then(data => {
-                console.table(data);
+                //console.table(data);
                 this.allMovies = data;
             })
             .catch(err => console.error(err));
