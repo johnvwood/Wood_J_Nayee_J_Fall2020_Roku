@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start-client": "nodemon app",
-    "start-bs" : "browser-sync start --proxy 'localhost:5050' --files 'public' 'views'",
+    "start-bs": "browser-sync start --proxy 'localhost:5050' --files 'public' 'views'",
     "start": "node app"
   },
   "author": "johnvwood",
@@ -14,6 +14,7 @@
     "browser-sync": "^2.26.14",
     "express": "^4.17.1",
     "hbs": "^4.1.1",
-    "http-proxy-middleware": "^1.0.6"
+    "http-proxy-middleware": "^1.0.6",
+    "vue-router": "^3.5.1"
   }
 }

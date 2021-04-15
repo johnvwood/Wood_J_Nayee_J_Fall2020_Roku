@@ -19,21 +19,15 @@ router.use("/ums", createProxyMiddleware({
     changeOrigin: true
 }))
 
-
 //ROUTES
-    router.get("/", (req, res) => {
-        res.render("index");
-    })
+router.get("/", (req, res) => {
+    res.render("index");
+})
 
-    router.get("/login", (req, res) => {
-        res.render("login");
-    })
-
-//ERROR 404 ROUTE
-    router.use((req, res) => {
-        res.status(404);
-        res.render("error");
-    })
-
+//ERROR ROUTE
+router.use((req, res) => {
+    res.status(404);
+    res.render("error");
+})
 
 module.exports = router;
