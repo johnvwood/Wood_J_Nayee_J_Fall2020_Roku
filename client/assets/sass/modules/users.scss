@@ -1,0 +1,50 @@
+.pageUsers{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+    box-sizing: border-box;
+    padding-bottom: 38px;
+    background-color: white;
+}
+
+.usersHeader {
+    font-size:22pt;
+    display:flex;
+    color:grey;
+    margin-bottom:20px;
+}
+
+#usersList {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.usersBox{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    cursor:pointer;
+    margin-top:36px;
+    width: 200px;
+}
+
+.usersPfp {
+    margin-bottom:12px;
+    border-radius: 100%;
+    border:3px solid $mainPurple;
+    filter: $shadow;
+    height:80px;
+    width:80px;
+    transition:300ms;
+    &:hover{
+        filter:opacity(0.9)
+    }
+}
+
+.usersName {
+    font-size:14pt;
+}

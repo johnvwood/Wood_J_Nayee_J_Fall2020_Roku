@@ -1,93 +1,136 @@
 .heroRotater {
-    background-color: none;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    .heroVid{
-        padding-top:56.25%;
-        background-color: $mainPurple;
-        width: 90%;
-        border-radius: 40px;
-        margin: auto;
-        filter: $shadow;
-    }
-    .heroDots {
-        width: 20%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: auto;
-        margin-top:20px;
-        margin-bottom:30px;
-        section {
-            height:13px;
-            width: 13px;
-            border-radius: 100%;
-            background-color: black;
-            transition: 100ms;
-            &:hover{
-                background-color: $mainPurple;
-            }
-        }
-    }
+    margin-top: 87px;
 }
 
-.movieRowHeader {
-    margin: auto;
-    margin-bottom: 20px;
-    width: 90%;
-    height: 80px;
-    font-size: 18pt;
+.heroVid {
+    width: 100%;
+    background-color: $mainPurple;
+    filter: $shadow;
+}
+
+.heroInfo {
+    padding-left:  30px;
+    padding-right: 30px;
+    padding-top:   16px;
+    padding-bottom:16px;
+    margin-bottom: 54px;
+}
+
+.movieTopBox {
     display: flex;
     justify-content: space-between;
-    padding-top: 22px;
-    box-sizing: border-box;
+    align-items: center;
+    padding-top:   12px;
+    padding-bottom:12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.movieTitle {
+    font-size:   16pt;
+    line-height: 18pt;
+    width:  79%;
+}
+
+.movieYrLBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self:flex-end;
+    text-align: right;
+    width: 21%;
+    font-size: 13pt;
+}
+
+.movieYear {
+    margin-bottom: 1px;
+}
+
+
+.movieDesc {
+    font-size: 13pt;
+    line-height: 14pt;
+}
+
+.mediaRowHeader {
+    margin-bottom: 46px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16pt;
     color: black;
-    .headerViewAll{
+    box-sizing: border-box;
+    filter: $shadow;
+    width: 100%;
+    .headerViewAll {
         color: $mainPurple;
         cursor: pointer;
     }
 }
 
 .movieRow {
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .movieBox {
-    width: 120px;
+    width: 100px;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
-    margin: 6px;
-    background-color: white;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.3));
-    cursor: pointer;
-    transition-duration: 300ms;
+    margin: 5px;
     margin-bottom: 30px;
     border-radius: 14px;
-    &:hover{
+    background-color: white;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2));
+    cursor: pointer;
+    transition-duration: 300ms;
+    &:hover {
         filter: drop-shadow(0px 8px 20px rgba(179, 80, 255, 0.4));
-        width: 122px;
     }
     .movieThumbImg {
-        border-radius: 14px 14px 0 0;
+        border-radius: 4px;
         width: inherit;
         align-self: center;
     }
-    .movieTitle {
-        padding: 6px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        text-align: center;
-        height: 55px;
-        box-sizing: border-box;
-        color: rgb(110, 110, 110); 
-        font-size: 10pt;
-        font-weight: bold;
+}
+
+.moviesButton, .showsButton, .audioButton {
+    width: 33.33%;
+    padding: 6px;
+    background-color: $mainPurple;
+    border:none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        opacity: 90%;
     }
 }
+
+.moviesButton{
+    img {
+        height:28px;
+    }
+}
+
+.showsButton{
+    img {
+        height:36px;
+    }
+}
+
+.audioButton{
+    img {
+        height:30px;
+    }
+}
+
 

@@ -1,29 +1,26 @@
 ![rokuLogoWide](assets/readmeLogo.png "Roku Logo")
 # Roku Streaming App
 
-This app is a basic mobile-first streaming app that streams and renders dynamic data from several databases or APIs. It includes a login, sign up, share, comment, rate and other popularly used functions of social apps. The home screen may only be accessed once a user has successfully made an account and displays different content depending on whether the user profile is in the kid or adult age range. On click, the app brings up data of the currently selected TV show or movie, and presents a gateway to view the selected media, or simply exit out and choose another.
-
-### To Do
-
-- Implement the prototype styling to sass files
-- Add iPad and Desktop viewing presets
-- For a more detailed 'To Do' please check below for 'Project Roadmap'
+This app is a basic mobile-first streaming app that streams and renders dynamic data from several databases and APIs. It includes a login and mediaplayer functionality. The home screen may only be accessed once a user has successfully logged in. On click, the app brings up data of the currently selected TV show or movie, and presents a gateway to view the selected media.
 
 ### Required
 
 - HTML Viewing Application
 - Decompression Software (.zip)
 - Functional Computer(s)
+- Node (NPM)
+- localhost Server
+- Web Browser
 
-### Instructions for Use
+### Essential Steps!
 
-- Click the green 'Code' button and hit 'Download ZIP'
-- Extract it into a folder, best done in an empty one
-- Import 'assets/roku_streaming.sql' into your local MySQL structure (PHPMyAdmin etc.)
+- Download ['media.zip'](https://drive.google.com/file/d/1LqCh3gOo7WKqe6SD43heT9QHPGewU2Ej/view?usp=sharing) and extract the 'media' folder into your 'client/public/' directory.
 - Configure the 'server/config/userConfig.js' file with your MySQL User and Password
+- Import 'roku_streaming.sql' from the 'assets' folder into your database system
+- You MUST have a localhost server running (WAMP, MAMP etc..)
 - Run `npm run start-server` for the server process (port 5000)
 - Run `npm run start-client` for the client process (port 5050)
-- Open the client port as localhost in a browser window
+
 - Email us (at bottom) if you enjoy our work and want to collaborate
 
 ### Project Roadmap

@@ -1,7 +1,6 @@
 html {
   background: white;
   min-width: 360px;
-  max-width: 767px;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -10,218 +9,440 @@ body {
   background: white;
 }
 
-nav {
-  height: 140px;
-  padding-bottom: 10px;
+.navbar {
   background-color: white;
+  border-bottom: 5px solid #662d91;
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
-nav .navbar {
-  width: 85%;
+
+.navLogo {
+  height: 36px;
+}
+
+.userNav {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.navPfp {
+  border-radius: 100%;
+  height: 29px;
+  width: 29px;
+}
+
+.navAdmin {
+  height: 29px;
+  width: 29px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navLogout {
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  border-top: 5px solid #662d91;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
 }
-nav .navbar .navbarMenu {
-  background-color: black;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
+footer p {
+  font-size: 14pt;
 }
-nav .navbar .navbarLinkBox {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 70%;
-}
-nav .navbar .navbarLinkBox a {
-  align-self: center;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
-  font-size: 18pt;
-}
-nav .navbar .navbarSearch {
-  background-color: black;
-  width: 34px;
-  height: 34px;
+
+.footerIcon {
+  height: 29px;
+  padding-left: 2px;
   cursor: pointer;
 }
 
 .heroRotater {
-  background-color: none;
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
-}
-.heroRotater .heroVid {
-  padding-top: 56.25%;
-  background-color: #662d91;
-  width: 90%;
-  border-radius: 40px;
-  margin: auto;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
-}
-.heroRotater .heroDots {
-  width: 20%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
-.heroRotater .heroDots section {
-  height: 13px;
-  width: 13px;
-  border-radius: 100%;
-  background-color: black;
-  transition: 100ms;
-}
-.heroRotater .heroDots section:hover {
-  background-color: #662d91;
+  margin-top: 87px;
 }
 
-.movieRowHeader {
-  margin: auto;
-  margin-bottom: 20px;
-  width: 90%;
-  height: 80px;
-  font-size: 18pt;
+.heroVid {
+  width: 100%;
+  background-color: #662d91;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+}
+
+.heroInfo {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-bottom: 54px;
+}
+
+.movieTopBox {
   display: flex;
   justify-content: space-between;
-  padding-top: 22px;
-  box-sizing: border-box;
-  color: black;
+  align-items: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
-.movieRowHeader .headerViewAll {
+
+.movieTitle {
+  font-size: 16pt;
+  line-height: 18pt;
+  width: 79%;
+}
+
+.movieYrLBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-end;
+  text-align: right;
+  width: 21%;
+  font-size: 13pt;
+}
+
+.movieYear {
+  margin-bottom: 1px;
+}
+
+.movieDesc {
+  font-size: 13pt;
+  line-height: 14pt;
+}
+
+.mediaRowHeader {
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16pt;
+  color: black;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+  width: 100%;
+}
+.mediaRowHeader .headerViewAll {
   color: #662d91;
   cursor: pointer;
 }
 
 .movieRow {
+  margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .movieBox {
-  width: 120px;
+  width: 100px;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
-  margin: 6px;
-  background-color: white;
-  box-sizing: border-box;
-  filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.3));
-  cursor: pointer;
-  transition-duration: 300ms;
+  margin: 5px;
   margin-bottom: 30px;
   border-radius: 14px;
+  background-color: white;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.2));
+  cursor: pointer;
+  transition-duration: 300ms;
 }
 .movieBox:hover {
   filter: drop-shadow(0px 8px 20px rgba(179, 80, 255, 0.4));
-  width: 122px;
 }
 .movieBox .movieThumbImg {
-  border-radius: 14px 14px 0 0;
+  border-radius: 4px;
   width: inherit;
   align-self: center;
 }
-.movieBox .movieTitle {
+
+.moviesButton, .showsButton, .audioButton {
+  width: 33.33%;
   padding: 6px;
+  background-color: #662d91;
+  border: none;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  height: 55px;
-  box-sizing: border-box;
-  color: #6e6e6e;
-  font-size: 10pt;
-  font-weight: bold;
+}
+.moviesButton:hover, .showsButton:hover, .audioButton:hover {
+  opacity: 90%;
+}
+
+.moviesButton img {
+  height: 28px;
+}
+
+.showsButton img {
+  height: 36px;
+}
+
+.audioButton img {
+  height: 30px;
 }
 
 .pageLogin {
-  height: 100vh;
-  display: flex;
-}
-.pageLogin p {
-  font-size: 11pt;
-  color: #969696;
-}
-
-.loginBox {
-  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 570px;
-  width: 380px;
-  box-sizing: border-box;
-}
-.loginBox input {
-  width: 100%;
-  height: 70px;
-  border: none;
-  box-sizing: border-box;
-  padding: 22px;
-  font-size: 12pt;
-  border-radius: 6px;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+  justify-content: center;
+  height: 100vh;
 }
 
 .rokuLoginLogo {
-  width: 160px;
-  margin-top: 44px;
-  margin-bottom: 30px;
+  width: 53%;
+  max-width: 240px;
+  margin-bottom: 56px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.loginForm input {
+  width: 100%;
+  height: 60px;
+  border: none;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 13pt;
+  border-radius: 6px;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+}
+
+#usernameBox {
+  margin-bottom: 18px;
+}
+
+#passwordBox {
+  margin-bottom: 58px;
 }
 
 .loginButton {
-  height: 68px;
-  width: 100%;
-  border-radius: 24px;
-  background-color: #23223b;
+  height: 60px;
+  width: 70%;
+  max-width: 240px;
+  border: none;
+  border-radius: 30px;
+  background-color: #662d91;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: -4px;
-  margin-bottom: -10px;
   cursor: pointer;
-}
-.loginButton p {
   color: white;
   font-weight: bold;
-  font-size: 18pt;
-}
-
-.signupBox {
-  display: flex;
-  flex-direction: row;
-}
-.signupBox .signupLink {
-  margin-left: 4px;
-  font-weight: bold;
-  cursor: pointer;
+  font-size: 15pt;
+  margin-bottom: 16px;
 }
 
 .socialsBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 224px;
+  width: 64%;
+  margin-top: 30px;
 }
 .socialsBox .googleBox, .socialsBox .facebookBox {
   width: 106px;
   height: 66px;
   background-color: white;
   border-radius: 12px;
-  filter: drop-shadow(0px 8px 14px rgba(0, 0, 0, 0.09));
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.socialsBox .loginIcon {
+  width: 36px;
+}
+
+.pageUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 38px;
+  background-color: white;
+}
+
+.usersHeader {
+  font-size: 22pt;
+  display: flex;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+#usersList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.usersBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 36px;
+  width: 200px;
+}
+
+.usersPfp {
+  margin-bottom: 12px;
+  border-radius: 100%;
+  border: 3px solid #662d91;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+  height: 80px;
+  width: 80px;
+  transition: 300ms;
+}
+.usersPfp:hover {
+  filter: opacity(0.9);
+}
+
+.usersName {
+  font-size: 14pt;
+}
+
+@media (min-width: 760px) {
+  .heroRotater {
+    margin: auto;
+    margin-top: 87px;
+    width: 70%;
+  }
+
+  .movieRow {
+    margin: auto;
+    width: 70%;
+  }
+
+  .loginForm {
+    width: 400px;
+  }
+
+  .socialsBox {
+    width: 240px;
+  }
+
+  .pageUsers {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: #471270;
+  }
+
+  .pageHome {
+    filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+    width: 80%;
+    background-color: white;
+    margin: auto;
+  }
+
+  .heroRotater {
+    width: 70%;
+  }
+
+  .movieRow {
+    width: 40%;
+  }
+
+  .heroVid {
+    width: 100%;
+  }
+
+  .navbar {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .navAdmin {
+    margin-left: 16px;
+  }
+
+  .navLogout {
+    margin-left: 16px;
+  }
+
+  footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .footerIcon {
+    padding-left: 10px;
+  }
+
+  .mediaRowHeader {
+    margin: auto;
+    margin-bottom: 46px;
+    width: 80%;
+  }
+
+  .heroAudio {
+    width: 40%;
+  }
+
+  .pageLogin {
+    margin: auto;
+    background-color: white;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .loginForm {
+    width: 600px;
+  }
+
+  .socialsBox {
+    width: 240px;
+  }
+
+  .pageUsers {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 100px;
+  }
+
+  .usersHeader {
+    margin-bottom: 34px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
