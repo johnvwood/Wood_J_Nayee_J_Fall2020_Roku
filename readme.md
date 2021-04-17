@@ -20,6 +20,7 @@ This app is a basic mobile-first streaming app that streams and renders dynamic 
 - You MUST have a localhost server running (WAMP, MAMP etc..)
 - Run `npm run start-server` for the server process (port 5000)
 - Run `npm run start-client` for the client process (port 5050)
+
 - Email us (at bottom) if you enjoy our work and want to collaborate
 
 ### Project Roadmap
