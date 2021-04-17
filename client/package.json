@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start-client": "nodemon app",
-    "start-bs": "browser-sync start --proxy 'localhost:5050' --files 'public' 'views'",
+    "start-bs": "browser-sync start --proxy 'localhost:5050' --files '../client'",
     "start": "node app"
   },
   "author": "johnvwood",

@@ -7,7 +7,7 @@ export default {
         <section class="pageHome">
             <div class="heroRotater">
                 <video class="heroVid" :src='"video/movies/" + currentMedia.movies_trailer' controls autoplay muted>
-                This video is not supported by your browser.
+                    This video is not supported by your browser.
                 </video>
                 <div class="heroInfo">
                     <div class="movieTopBox">
@@ -20,8 +20,10 @@ export default {
                     <p class="movieDesc">{{currentMedia.movies_storyline}}</p>
                 </div>
             </div>
-            <div class="movieRowHeader">
-                <h3 class="headerText">Movies</h3>
+            <div class="mediaRowHeader">
+                <button @click="changeToMovies"></button>
+                <button @click="changeToShows"></button>
+                <button @click="changeToAudio"></button>
             </div>
 
             <div class="movieRow">
@@ -39,14 +41,6 @@ export default {
     },
 
     created: function() {
-        // fetch("/api/movies")
-        //     .then(res => res.json())
-        //     .then(data => {
-        //         //console.table(data);
-        //         this.allMedia = data;
-        //     })
-        //     .catch(err => console.error(err));
-
         this.loadMedia(null, 'movies');
         this.$emit('setuser', this.currentuser);
     },
@@ -66,7 +60,6 @@ export default {
 
         thumbClick(target) {
             this.currentMedia = target;
-            console.log('Clicked on ', target);
         },
     }
 }

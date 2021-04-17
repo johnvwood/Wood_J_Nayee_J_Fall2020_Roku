@@ -4,7 +4,7 @@ const hbs = require("hbs");
 
 const app = express();
 
-hbs.registerPartials(path.join(__dirname, "/views/templates"));
+hbs.registerPartials(__dirname + "/views/templates/");
 hbs.partials = hbs.templates;
 
 const port = process.env.PORT || 5050;

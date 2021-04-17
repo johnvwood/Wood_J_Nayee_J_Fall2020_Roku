@@ -1,16 +1,8 @@
-<nav class="nav">
-    <div class="navbar">
-        <div class="navbarMenu"></div>
-        <div class="navbarLinkBox">
-            <a href="#">Home</a>
-        </div>
-        <div class="navbarSearch"></div>
-        <div v-if="currentUser" class="userNav">
-            <p @click="logout">Logout</p>
-            <img v-if="currentUser.user_avatar" :src="'images/users/' + currentUser.user_avatar" :alt="currentUser.user_fname + 's Profile Picture'">
-            <p v-if="currentUser.user_admin">This is the Admin button</p>
-            
-        </div>
-        
+<nav v-if="currentuser" class="navbar">
+    <img class="navLogo" src="images/roku-logo.svg" alt="Roku Streaming Logo">
+    <div class="userNav">
+        <img class="navPfp" v-if="currentuser.user_avatar" :src="'images/users/' + currentuser.user_avatar" :alt="currentuser.user_fname + 's Profile Picture'">
+        <img class="navAdmin" v-if="currentuser.user_admin" src="images/gear.png" alt="Admin Settings">
+        <img class="navLogout" @click="logout" src="images/logout.png" alt="Logout">
     </div>
 </nav>

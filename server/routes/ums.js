@@ -7,7 +7,7 @@ router.use(express.urlencoded({extended: false}));
 
 router.post('/admin/login', (req, res) => {
 
-    connect.query(`SELECT user_id, user_admin, user_access, user_avatar FROM tbl_user WHERE user_name = "${req.body.username}"`, (err, row) => {
+    connect.query(`SELECT * FROM tbl_user WHERE user_name = "${req.body.username}"`, (err, row) => {
         if (err) throw err;
 
         if (row.length) {
@@ -19,7 +19,7 @@ router.post('/admin/login', (req, res) => {
 })
 
 router.get('/admin/getusers', (req, res) => {
-    connect.query('SELECT user_id, user_name, user_admin, user_access, user_avatar FROM tbl_user', (error, results) => {
+    connect.query('SELECT * FROM tbl_user', (error, results) => {
         
         if (error) {
             res.status(444).json({message:'failure', status: `Cannot retrieve users`});

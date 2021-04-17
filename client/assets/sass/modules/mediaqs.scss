@@ -1,9 +1,108 @@
 // iPad width
-@media( min-width:768px ){
+@media( min-width:760px ){
+    .heroRotater {
+        margin: auto;
+        margin-top: 87px;
+        width: 70%;
+    }
 
+    .movieRow {
+        margin: auto;
+        width: 70%;
+    }
+
+    .loginForm{
+        width: 400px;
+    }
+
+    .socialsBox{
+        width: 240px;
+    }
+
+    .pageUsers{
+        padding-bottom: 100px;
+    }
 }
 
 // Desktop width
 @media( min-width:1200px ){
 
+    body {
+        background-color: rgb(71, 18, 112);
+    }
+
+    .pageHome {
+        filter: $shadow;
+        width: 80%;
+        background-color: white;
+        margin: auto;
+    }
+
+    .heroRotater {
+        width: 70%;
+    }
+
+    .movieRow {
+        width: 40%;
+    }
+
+    .heroVid{
+        width: 100%;
+    }
+
+    .navbar {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .navAdmin {
+        margin-left: 16px;
+    }
+    
+    .navLogout{
+        margin-left: 16px;
+    }
+
+    footer {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .footerIcon{
+        padding-left: 10px;
+    }
+
+    .mediaRowHeader {
+        margin: auto;
+        margin-bottom: 46px;
+        width: 80%;
+    }
+
+    .heroAudio {
+        width: 40%;
+    }
+
+    .pageLogin {
+        margin: auto;
+        background-color: white;
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    .loginForm{
+        width: 600px;
+    }
+
+    .socialsBox{
+        width: 240px;
+    }
+
+    .pageUsers{
+        margin: auto;
+        width: 80%;
+        padding-bottom: 100px;
+    }
+    .usersHeader{
+        margin-bottom: 34px;
+    }
 }

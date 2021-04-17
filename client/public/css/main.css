@@ -9,71 +9,83 @@ body {
   background: white;
 }
 
-nav {
-  height: 120px;
+.navbar {
   background-color: white;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
-  border-bottom: 3px solid #662d91;
-}
-nav .navbar {
+  border-bottom: 5px solid #662d91;
+  box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   padding-left: 30px;
   padding-right: 30px;
-}
-nav .navbar .navbarMenu {
-  background-color: black;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
-}
-nav .navbar .navbarLinkBox {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 70%;
-}
-nav .navbar .navbarLinkBox a {
-  align-self: center;
-  font-style: normal;
-  text-decoration: none;
-  color: black;
-  font-size: 18pt;
-}
-nav .navbar .navbarSearch {
-  background-color: black;
-  width: 34px;
-  height: 34px;
-  cursor: pointer;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
 }
 
-.footer {
-  height: 80px;
-  width: 100%;
-  background-color: white;
+.navLogo {
+  height: 36px;
+}
+
+.userNav {
+  width: 30%;
   display: flex;
   align-items: center;
-  border-top: 3px solid #662d91;
+  justify-content: flex-end;
 }
-.footer .footerBox {
+
+.navPfp {
+  border-radius: 100%;
+  height: 29px;
+  width: 29px;
+}
+
+.navAdmin {
+  height: 29px;
+  width: 29px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.navLogout {
+  height: 26px;
+  width: 26px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+footer {
   width: 100%;
+  height: 70px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding-left: 30px;
   padding-right: 30px;
+  background-color: white;
+  border-top: 5px solid #662d91;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+}
+footer p {
+  font-size: 14pt;
+}
+
+.footerIcon {
+  height: 29px;
+  padding-left: 2px;
+  cursor: pointer;
 }
 
 .heroRotater {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 87px;
 }
 
 .heroVid {
@@ -83,8 +95,8 @@ nav .navbar .navbarSearch {
 }
 
 .heroInfo {
-  padding-left: 26px;
-  padding-right: 26px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-top: 16px;
   padding-bottom: 16px;
   margin-bottom: 54px;
@@ -125,18 +137,17 @@ nav .navbar .navbarSearch {
   line-height: 14pt;
 }
 
-.movieRowHeader {
-  padding-left: 26px;
-  padding-right: 26px;
-  margin-top: 12px;
+.mediaRowHeader {
   margin-bottom: 46px;
   display: flex;
   justify-content: space-between;
   font-size: 16pt;
   color: black;
   box-sizing: border-box;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+  width: 100%;
 }
-.movieRowHeader .headerViewAll {
+.mediaRowHeader .headerViewAll {
   color: #662d91;
   cursor: pointer;
 }
@@ -152,7 +163,8 @@ nav .navbar .navbarSearch {
 }
 
 .movieBox {
-  width: 96px;
+  width: 100px;
+  object-fit: cover;
   display: flex;
   flex-direction: column;
   margin: 5px;
@@ -173,65 +185,93 @@ nav .navbar .navbarSearch {
   align-self: center;
 }
 
-.pageLogin {
-  height: 100vh;
+.moviesButton, .showsButton, .audioButton {
+  width: 33.33%;
+  padding: 6px;
+  background-color: #662d91;
+  border: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.pageLogin p {
-  font-size: 11pt;
-  color: #969696;
+.moviesButton:hover, .showsButton:hover, .audioButton:hover {
+  opacity: 90%;
 }
 
-.loginBox {
-  margin: auto;
+.moviesButton img {
+  height: 28px;
+}
+
+.showsButton img {
+  height: 36px;
+}
+
+.audioButton img {
+  height: 30px;
+}
+
+.pageLogin {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 570px;
-  width: 380px;
-  box-sizing: border-box;
+  justify-content: center;
+  height: 100vh;
 }
-.loginBox input {
+
+.rokuLoginLogo {
+  width: 53%;
+  max-width: 240px;
+  margin-bottom: 56px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.loginForm input {
   width: 100%;
-  height: 70px;
+  height: 60px;
   border: none;
   box-sizing: border-box;
-  padding: 22px;
-  font-size: 12pt;
+  padding: 20px;
+  font-size: 13pt;
   border-radius: 6px;
   filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
 }
 
-.rokuLoginLogo {
-  width: 160px;
-  margin-top: 44px;
-  margin-bottom: 30px;
+#usernameBox {
+  margin-bottom: 18px;
+}
+
+#passwordBox {
+  margin-bottom: 58px;
 }
 
 .loginButton {
-  height: 68px;
-  width: 100%;
-  border-radius: 24px;
-  background-color: #23223b;
+  height: 60px;
+  width: 70%;
+  max-width: 240px;
+  border: none;
+  border-radius: 30px;
+  background-color: #662d91;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: -4px;
-  margin-bottom: -10px;
   cursor: pointer;
-}
-.loginButton p {
   color: white;
   font-weight: bold;
-  font-size: 18pt;
+  font-size: 15pt;
+  margin-bottom: 16px;
 }
 
 .socialsBox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 224px;
+  width: 64%;
+  margin-top: 30px;
 }
 .socialsBox .googleBox, .socialsBox .facebookBox {
   width: 106px;
@@ -239,6 +279,170 @@ nav .navbar .navbarSearch {
   background-color: white;
   border-radius: 12px;
   filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.socialsBox .loginIcon {
+  width: 36px;
+}
+
+.pageUsers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  padding-bottom: 38px;
+  background-color: white;
+}
+
+.usersHeader {
+  font-size: 22pt;
+  display: flex;
+  color: grey;
+  margin-bottom: 20px;
+}
+
+#usersList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.usersBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 36px;
+  width: 200px;
+}
+
+.usersPfp {
+  margin-bottom: 12px;
+  border-radius: 100%;
+  border: 3px solid #662d91;
+  filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+  height: 80px;
+  width: 80px;
+  transition: 300ms;
+}
+.usersPfp:hover {
+  filter: opacity(0.9);
+}
+
+.usersName {
+  font-size: 14pt;
+}
+
+@media (min-width: 760px) {
+  .heroRotater {
+    margin: auto;
+    margin-top: 87px;
+    width: 70%;
+  }
+
+  .movieRow {
+    margin: auto;
+    width: 70%;
+  }
+
+  .loginForm {
+    width: 400px;
+  }
+
+  .socialsBox {
+    width: 240px;
+  }
+
+  .pageUsers {
+    padding-bottom: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-color: #471270;
+  }
+
+  .pageHome {
+    filter: drop-shadow(0px 0px 14px rgba(0, 0, 0, 0.11));
+    width: 80%;
+    background-color: white;
+    margin: auto;
+  }
+
+  .heroRotater {
+    width: 70%;
+  }
+
+  .movieRow {
+    width: 40%;
+  }
+
+  .heroVid {
+    width: 100%;
+  }
+
+  .navbar {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .navAdmin {
+    margin-left: 16px;
+  }
+
+  .navLogout {
+    margin-left: 16px;
+  }
+
+  footer {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .footerIcon {
+    padding-left: 10px;
+  }
+
+  .mediaRowHeader {
+    margin: auto;
+    margin-bottom: 46px;
+    width: 80%;
+  }
+
+  .heroAudio {
+    width: 40%;
+  }
+
+  .pageLogin {
+    margin: auto;
+    background-color: white;
+    width: 80%;
+    box-sizing: border-box;
+  }
+
+  .loginForm {
+    width: 600px;
+  }
+
+  .socialsBox {
+    width: 240px;
+  }
+
+  .pageUsers {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 100px;
+  }
+
+  .usersHeader {
+    margin-bottom: 34px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

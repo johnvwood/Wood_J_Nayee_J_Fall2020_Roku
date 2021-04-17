@@ -4,15 +4,13 @@ export default {
     name: "TheAllUsersComponent",
 
 	template: `
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="user-message">{{ message }}</h1>
+		<div class="pageUsers">
+			<h2 class="usersHeader">Who's using Roku?</h2>
+			<div id="usersList">
+				<user v-for="(user, index) in userList" :liveuser="user" :key="index">
+				</user>
 			</div>
-
-			<user v-for="(user, index) in userList" :liveuser="user" :key="index"></user>
 		</div>
-	</div>
 	`,
 
 	created: function() {
@@ -25,7 +23,6 @@ export default {
 
 	data() {
 		return ({	
-			  message: `Who's Using Roku?`,
 			  userList: [] 
 			})
 	},

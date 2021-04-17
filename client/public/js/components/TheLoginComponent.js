@@ -2,50 +2,29 @@ export default {
     name: "TheLoginComponent",
     template: `
         <section class="pageLogin">
-            <form class="loginBox">
-                <img class="rokuLoginLogo" src="images/roku-logo.svg" alt="Roku Logo">
-                <input v-model="input.username" type="text" name="" id="usernameBox" placeholder="Username" required>
-                <input v-model="input.password" type="password" name="" id="passwordBox" placeholder="Password" required>
-                <button v-on:click.prevent="login()" type="submit" class="loginButton">Login</button>
-                <div class="socialsBox">
-                    <div class="googleBox"></div>
-                    <div class="facebookBox"></div>
-                </div>
+            <img class="rokuLoginLogo" src="images/roku-logo.svg" alt="Roku Logo">
+            <form class="loginForm">   
+                <input v-model="input.username" type="text" name="username" id="usernameBox" placeholder="Username" required>
+                <input v-model="input.password" type="password" name="password" id="passwordBox" placeholder="Password" required>
+                <button @click.prevent="login()" type="submit" class="loginButton">Login</button>
             </form>
-        </section>
-        <!-- <div class="container">
-            <div class="jumbotron roku-jumbotron">
-                <h1 class="display-4">Welcome to Flashback!</h1>
-                <p class="lead">Before revisiting your favourite movies, tv shows or music from yesteryear, please log in with a valid username and password.</p>
-                <hr class="my-4">
-                <form>
-                    <div class="form-row align-items-center">
-                        <div class="col-md-3 my-1">
-                            <label class="sr-only" for="inlineFormInputName">Name</label>
-                            <input v-model="input.username" type="text" class="form-control" id="inlineFormInputName" placeholder="username" required>
-                        </div>
-
-                        <div class="col-md-3 my-1">
-                            <label class="sr-only" for="inlineFormPassword">Name</label>
-                            <input v-model="input.password" type="password" class="form-control" id="inlineFormPassword" placeholder="password" required>
-                        </div>
-
-                        <div class="col-auto my-1">
-                            <button v-on:click.prevent="login()" type="submit" class="btn btn-primary">Go!</button>
-                        </div>
-                    </div>
-                </form>            
+            <div class="socialsBox">
+                <div class="googleBox">
+                    <img src="images/google.png" class="loginIcon">
+                </div>
+                <div class="facebookBox">
+                    <img src="images/facebook.png" class="loginIcon">
+                </div>
             </div>
-        </div> -->
-     `,
+        </section>
+    `,
  
     data() {
         return {
-             input: {
+            input: {
                  username: "",
                  password: ""
-            },
-
+            }
         }
     },
  

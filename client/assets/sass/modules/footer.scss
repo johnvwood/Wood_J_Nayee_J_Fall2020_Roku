@@ -1,17 +1,24 @@
-.footer {
-    height: 80px;
+footer {
     width: 100%;
-    background-color:white;
+    height: 70px;
+    box-sizing: border-box;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    border-top: 3px solid $mainPurple;
-    .footerBox {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding-left: 30px;
-        padding-right: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color:white;
+    border-top: 5px solid $mainPurple;
+    filter: $shadow;
+    p{
+        font-size: 14pt;
     }
+}
+
+.footerIcon {
+    height: 29px;
+    padding-left: 2px;
+    cursor: pointer;
 }
 
