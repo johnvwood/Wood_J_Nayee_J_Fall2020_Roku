@@ -24,7 +24,6 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
-
 -- Table structure for table `tbl_audio`
 --
 
@@ -51,7 +50,6 @@ INSERT INTO `tbl_audio` (`audio_id`, `audio_cover`, `audio_title`, `audio_year`,
 (4, 'iwant.jpg', 'I Want It That Way', '1999', '', 'Backstreet Boys', 'iwant.mp3'),
 (5, 'rockaround.png', 'Rock Around The Clock', '1955', '', 'Bill Haley And The Comets', 'rockaround.mp3');
 
-
 -- --------------------------------------------------------
 
 --
@@ -71,13 +69,11 @@ CREATE TABLE IF NOT EXISTS `tbl_movies` (
   PRIMARY KEY (`movies_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
-
 --
 -- Dumping data for table `tbl_movies`
 --
 
 INSERT INTO `tbl_movies` (`movies_id`, `movies_cover`, `movies_title`, `movies_year`, `movies_runtime`, `movies_storyline`, `movies_trailer`, `movies_release`) VALUES
-
 (2, 'godfather.jpg', 'The Godfather', '1972', ' 2h 55m', 'An organized crime dynasty\'s aging patriarch transfers control of his clandestine empire to his reluctant son.', 'godfather.mp4', '24 March 1972'),
 (5, 'pulp.jpg', 'Pulp Fiction', '1994', '2h 34m', 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.', 'pulp.mp4', '14 October 1994'),
 (6, 'goodbad.jpg', 'The Good, the Bad and the Ugly', '1966', '2h 58m', 'A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.', 'goodbad.mp4', '29 December 1967'),
